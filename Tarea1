@@ -1,4 +1,8 @@
-sdvcsdacv
-ncwspdafe
-´fojaso gspjga+'erjgo+badv ds
-ojvpae jgovgjropgjarspjgvrva
+Algoritmo ejercicio1//video1
+	//primero defino mi variable como caracter 
+	// despues a mi vaible la va a ser verde
+	//y despues  escribir color y se va escribir verde
+	definir color como caracter
+	color<-"verde";
+	escribir color;
+fin algoritmo
