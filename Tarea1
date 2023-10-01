@@ -1,8 +1,7 @@
 Algoritmo ejercicio1//video1
-	//primero defino mi variable como caracter 
-	// despues a mi vaible la va a ser verde
-	//y despues  escribir color y se va escribir verde
-	definir color como caracter
+	//definir color como una variable como caracter 
+	// con el comando leer le doy el valor de verde a mi variable
+	//y despues reflejamos el valor de la variable color con el comando escribir
 	color<-"verde";
 	escribir color;
 fin algoritmo
