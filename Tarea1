@@ -1,7 +1,103 @@
-Algoritmo ejercicio1//video1
+Funcion ejercicio1//video1
 	//definir color como una variable como caracter 
 	// con el comando leer le doy el valor de verde a mi variable
 	//y despues reflejamos el valor de la variable color con el comando escribir
 	color<-"verde";
 	escribir color;
-fin algoritmo
+finfuncion 
+funcion ejercicio2//video1
+	// ejercicio2
+//	definir edad como una variable  entera
+//	entronces  la variable edad asignarla a 55
+//	despues escribir Edady nos saldria 55 porque es el numero que asignamos
+	
+	definir Edad como entero
+	Edad<-55;
+	escribir Edad;
+Finfuncion
+funcion ejercicio3//video1
+//	primero definiriamos activo como  la variable  logica
+//	segundo a activo lo asignariamos como Verdadero
+//	tercero poner escribir activo  y me va a salir la palabra verdadero
+	
+	definir activo como logico;
+	activo<-verdadero 
+	escribir activo;	
+Finfuncion
+funcion ejercicio4//video1
+	//ejercicio4
+	//primero tendria que definir edad como variable como entero
+//	luego preguntar cual es la edad?
+//	escribir la edad 
+//	despues mostrar cuantos años tiene la persona
+	definir edad como entero
+	escribir "¿que edad tienes ?"
+	leer edad
+	escribir edad,"años";
+Finfuncion
+funcion ejercicio5//video2
+	//ejercicio5 suma
+//	definimos nombre como una caracter
+//	luego a la variable lo asinamos un nombre y despues que se escriba el nombre
+	
+	definir nombre Como Caracter
+	nombre <-"ignacio";
+	escribir nombre 
+	nombre <-"victor";
+	escribir nombre 
+FinFuncion
+funcion ejercicio6//video2
+	//ejercicio6 suma
+	//primero deinir las variables a usar
+	//la operacion a realizar es una suma 
+	//5+6=11
+	definir num1,num2,resultado como entero
+	num1<-5;
+	num2<-6;
+	resultado <-num1+num2;
+	escribir resultado
+	
+Finfuncion
+funcion ejercicio7//video2
+	//ejercicio7 suma
+	// primero definir 3 variables  (num1,num2,resultado)
+	//(pedir ingresar el  primero y el segundo numero y  poner para escribirlo
+	//despues a resultado asignarle el valor de num1+num2  y realizar la operacion  
+	definir num1,num2,resultado como entero 
+	escribir "ingresar  el numero 1"
+	leer num1
+	escribir "ingresar num 2"
+	leer num2
+	resultado<-num1+num2
+	escribir "el resultado es " ,resultado
+Finfuncion
+funcion ejercicio8//video2
+	//ejercicio8
+	// primero definir 3 variables  (num1,num2,resultado)
+	//(pedir ingresar el  primero y el segundo numero y  poner para escribirlo
+	//despues a resultado asignarle el valor de num1-num2  y realizar la operacion  
+	definir num1,num2,resultado como entero 
+	escribir "ingresar  el numero 1"
+	leer num1
+	escribir "ingresar num 2"
+	leer num2
+	resultado<-num1-num2
+	escribir "el resultado es " ,resultado
+Finfuncion
+Algoritmo 
+	ejercicio1
+	ejercicio2
+	ejercicio3
+	ejercicio4
+	ejercicio5
+	ejercicio7
+	ejercicio8
+	ejercicio9
+	ejercicio10
+	ejercicio11
+	ejercicio12
+	ejercicio13
+	ejercicio14
+	
+FinAlgoritmo
+	
