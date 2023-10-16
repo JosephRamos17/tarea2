@@ -1,0 +1,1243 @@
+Funcion ejerc11 //Suma de dos n meros: Escribe un programa que tome dos n meros como entrada y muestre su suma.
+	//ent: a=0.0 , b=0.0 leer. c=0.0 calcular
+	//proce: c=a+b
+	//sali: a
+	
+	
+	Escribir "inrese un numero"
+	Leer a
+	Escribir "ingrese otro"
+	Leer b
+	Escribir "la suma de los dos numeros es" a+b
+	
+FinFuncion
+
+Funcion ejerc12 // rea de un tri ngulo: Pide al usuario que ingrese la base y la altura de un tri ngulo,
+	//luego calcula y muestra su  rea.
+	//ent: area a=0.0  base b=0.0 leer, c area=0.0 calcular
+	//proce: c=b*a/2 
+	//sali: c
+	Definir a, b, c Como Real
+	Escribir "leer el valor de altura"
+	Leer a
+	Escribir "leer el valor de base"
+	Leer b
+	c= (a*b)/2  
+	Escribir c 
+	
+FinFuncion
+
+Funcion ejerc13 //N mero par o impar: Solicita al usuario que ingrese un n mero e indica si es
+	//par o impar.
+	//ENT: a=0.0 leer 
+	//PROCE: si a mod 2 = 0 Entonces es Par sino es impar
+	//SALI: indicar si es par o impar si cumple la condicion
+	
+	Definir a,b como numerico 
+	Escribir "ingresar el numero que se quiere identificar" 
+	Leer a 
+	b= a mod 2
+	si b=0 Entonces
+		Escribir "par"
+	SiNo
+		Escribir "impar"
+	FinSi
+	
+FinFuncion 
+
+funcion ejerc14 //Calculadora simple: Crea una calculadora que realice operaciones b sicas
+	//como suma, resta, multiplicaci n y divisi n, seg n la elecci n del usuario.
+	//ent: a=0-4,b=0.0,c=0.0 leer,d=0.0 calcular
+	//Proc: segun a sea 1,2,3 o 4 se sumara restara multiplicara o dividira  d = b(+,-,*,/)c
+	//sali: d
+	Definir a,b,c,d como numerico
+	Leer a
+	Leer b
+	Escribir "escoja 1,2,3 si desea +,-,*,/"
+	Leer c
+	Segun c Hacer
+		1:
+			Escribir "la suma de ",a," + ",b,"es" a+b
+		2:
+			Escribir "la resta de ",a," - ",b,"es" a-b
+		3:
+			Escribir "la multiplicacion de ",a," * ",b,"es" a*b
+		De Otro Modo: 
+			Escribir "la division de ",a," / ",b,"es" a/b
+	Fin Segun
+	
+FinFuncion
+
+funcion ejerc15 //Tabla de multiplicar: Pide al usuario un n mero y muestra su tabla de
+	//multiplicar del 1 al 10.
+	//ent: a leer b leer , c calcular
+	//proce: b*a repetir el proceso hasta que a= 10 
+	//sali: c
+	Definir x Como Entero
+	
+	Escribir "ingrese el valor de la tabla"
+	Leer x
+	
+	Para a<-1 Hasta 10 Con Paso 1 Hacer 
+		
+		Escribir a*x
+		
+		
+		
+	Fin Para 
+	
+FinFuncion
+
+
+Funcion ejerc16 //Copiar palabra: Escribe un programa que lea dos palabras y concatena en otra
+	//variable las dos palabras
+	//ent: a , b leer c calcular
+	//proce: a+b
+	//sali: c
+	Definir a,b,c Como cadena
+	Escribir "ingrese las dos palabras que se va a concatenar"
+	leer a
+	leer b
+    c= a+b
+	Escribir c
+	
+FinFuncion
+
+Funcion ejerc17 //. Mayor de tres n meros: Solicita tres n meros y determina cu l es el mayor de ellos.
+	//ent: a,b,c Leer 
+	//proc: si a<b>c entonces a es mayor. si b<c y b>a entonces el mayor es b sino c es mayor
+	//sali: el numero que cumpla condicion es: 
+	
+	definir a ,b ,c como numerico
+	escribir "ingrese los 3 numeros a identificar"
+	leer a
+	leer b
+	leer c
+	
+	Si a>b y a>c Entonces
+		escribir a " es el mayor"
+	FinSi
+	si b>a y b>c entonces
+		escribir b " es mayor"
+		
+	FinSi
+	si c>a y c>b Entonces
+		escribir c " es mayor"
+	FinSi
+FinFuncion
+
+
+Funcion ejerc18 //Edad m nima para votar: Pregunta la edad del usuario y verifica si es elegible para votar (18 a os o m s). 
+	//ent: a
+	//proce: a>18 entonces si puede votar sino no puede votar 
+	//sali: segun cumpla la condicion, arrojar si puede o no votar
+	
+	Definir edad Como Entero
+	Escribir "ingrese su edad"
+	Leer edad
+	si edad > 17 Entonces
+		Escribir "si puede votar"
+	SiNo
+		Escribir "no puede votar"
+	FinSi
+	
+FinFuncion
+
+
+Funcion ejerc19 //19.	Calculadora de BMI: Crea un programa que calcule el  ndice de masa corporal (BMI) a partir del peso y la altura del usuario, y luego indique si est  en una categor a de peso saludable. 
+	//si est  en un acategor a de peso saludable.
+	//ent: (kg)a=0.0,(metros) b=0.0 leer, c= 0.0 calcular
+	//proce: c= a/(b*b)
+	//sali: su imc es: c , si cumple la condicion entonces indicar su categoria de peso 
+	escribir "ingrese peso en kilogramos"
+	leer peso
+	
+	Escribir "ingrese su altura en metros"
+	leer altura
+	
+	bmi=peso / (altura*altura)
+	Escribir "su bmi es" bmi
+	si bmi < 18.5 Entonces
+		Escribir "se encuentra el categoria peso saludable"
+	FinSi
+	si bmi >= 18.5 y bmi < 24.9 Entonces
+		escribir " se encuentra en categoria peso saludable"
+	FinSi
+	si bmi >= 30 y bmi < 34.9 Entonces
+		Escribir "tiene sobrepeso grado 1"
+	FinSi
+	si bmi >= 35 y bmi < 39.9 Entonces
+		Escribir "tiene sobrepeso grado 2"
+	finsi
+	
+	si bmi >= 40 escribir "tiene sobrepeso grado 3"
+	FinSi
+	
+FinFuncion
+
+Funcion ejerc20 //N mero positivo, negativo o cero: Pide al usuario que ingrese un n mero y muestra si es positivo, negativo o cero.
+	//ent: a=0.0 leer
+	//proce: si a < 0 entonces es negativo si a > o entonces es positivo y si a = 0 Entonces es 0
+	//sali: dependiendo de la condicion que se cumpla sera negativo, positivo o 0
+	Escribir "ingrese un numero"
+	Leer nume
+	
+	si nume > 0 Entonces
+		Escribir "es positivo"
+	sino 
+		Escribir "pueden entrar negativos o ceros"
+		si nume < 0 Entonces
+			Escribir "es negativo"
+		FinSi
+	FinSi
+FinFuncion
+
+Funcion ejerc21 //A o bisiesto: Solicita al usuario un a o y determina si es un a o bisiesto o no. 
+	//Un a o bisiesto es divisible por 4, pero no por 100, a menos que tambi n sea divisible por 400. 
+	//divisible por 400.
+	//ent: a=0.0 Leer 
+	//proce: a mod 4 = 0 , a mod 4 <> 0 a menos que a mod 400 = 0
+	//sali: dependiendo de si cumple la condicion identifique si es o no un a o viciesto
+	
+	
+	Escribir "ingrese el a o"
+	Leer a o 
+	
+	si a o mod 4=0 y (a o mod 100 <> 0) o (a o mod 400=0) Entonces
+		Escribir "es bisiesto"
+	sino
+		Escribir "no es bisiesto"
+		
+		
+	FinSi
+	
+FinFuncion
+
+
+Funcion ejerc22 //Signo zodiacal: Pide al usuario que ingrese su mes y d a de nacimiento, luego 
+	//determina su signo zodiacal. Puedes usar una serie de declaraciones if para 
+	//comparar las fechas ingresadas con las fechas l mite de cada signo zodiacal
+	definir  mes,dia,owo como  enteros 
+	definir signo como caracter
+	
+	escribir"ingresar tu dia de nacimiento"
+	leer dia
+	escribir"ingresar tu mes de nacimiento"
+	leer mes 
+	owo =0
+	
+	si(mes =1 y (dia >=21 y dia<= 31)) O (mes = 2 y dia<=19) Entonces
+		signo="Acuario"
+		owo= 1
+	FinSi
+	si(mes =2 y (dia >=20 y dia<= 29)) O (mes = 3 y dia<=20) Entonces
+		signo="Pisis"
+		owo= 1
+	FinSi
+	si(mes =3 y (dia >=21 y dia<= 31)) O (mes = 4 y dia<=20) Entonces
+		signo="Aries"
+		owo= 1
+	FinSi
+	si(mes =4 y (dia >=21 y dia<= 30)) O (mes = 5 y dia<=20) Entonces
+		signo="tauro"
+		owo= 1
+	FinSi
+	si(mes =5 y (dia >=21 y dia<= 31)) O (mes = 6 y dia<=21) Entonces
+		signo="Geminis"
+		owo= 1
+	FinSi
+	si(mes =6 y (dia >=22 y dia<= 30)) O (mes = 7 y dia<=22) Entonces
+		signo="Cancer"
+		owo= 1
+	FinSi	
+	si(mes =7 y (dia >=23 y dia<= 31)) O (mes = 8 y dia<=22) Entonces
+		signo="Leo"
+		owo= 1
+	FinSi
+	si(mes =8 y (dia >=23 y dia<= 31)) O (mes = 9 y dia<=22) Entonces
+		signo="Virgo"
+		owo= 1
+	FinSi
+	si(mes =9 y (dia >=23 y dia<= 30)) O (mes = 10 y dia<=22) Entonces
+		signo="Libra"
+		owo= 1
+	FinSi
+	si(mes =10 y (dia >=23 y dia<= 31)) O (mes = 11 y dia<=22) Entonces
+		signo="Escorpio"
+		owo= 1
+	FinSi
+	si(mes =11 y (dia >=23 y dia<= 30)) O (mes = 12 y dia<=21) Entonces
+		signo="Sagitario"
+		owo= 1
+	FinSi
+	si(mes =12 y (dia >=21 y dia<= 31)) O (mes = 1 y dia<=20) Entonces
+		signo="Capricornio"
+		owo= 1
+	FinSi
+	si owo=1 entonces 
+		escribir "tu signo zodiacal es ",signo
+	FinSi
+FinAlgoritmo
+
+
+FinFuncion
+
+
+Funcion ejerc23 //D a del mes con respecto a la segunda quincena: Solicita al usuario que ingrese un n mero de d a del mes (por ejemplo, del 1 al 31) y verifica si ese d a
+	//pertenece a la primera quincena (d as 1-15) o a la segunda quincena (d as 16-31).
+	//ent: a=0,0 Leer 
+	//proce: a <= 15 es primera quincena si a>=15 es segunda quincena
+	//sali: segun a cumpla la condicion indicar si es primera o segunda quincena
+	
+	escribir "IDENTICADOR DE PRIMERA O SEGUNDA QUINCENA"
+	definir a como reales
+	Escribir "ingrese el dia que desea identificar"
+	leer a
+	si a <= 15 y a > 0 entonces 
+		Escribir "es primera quincena"
+	FinSi
+	si a >15 y a <=31 Entonces
+		escribir "es segunda quincena"
+	FinSi
+	
+FinFuncion
+
+
+Funcion ejerc24 //D a de la semana: Pide al usuario que ingrese un n mero del 1 al 7, donde 1 representa el domingo, 2 el lunes, 3 el martes, y as  sucesivamente. Luego,
+	//utiliza una estructura switch para mostrar el nombre del d a de la semana correspondiente al n mero ingresado.
+	//ent: a
+	//proce: segun el dia que se asigne a la variable a nos indique el dia de la semana
+	//sali: segun la condicion que se cumpla indique el dia de la semana
+	
+	escribir "MOSTRAR EL DIA DE LA SEMANA SEGUN EL NUMERO QUE CORRESPONDA"
+	leer a
+	Segun a Hacer
+		1:
+			escribir "Lunes"
+		2:
+			escribir "Martes"
+		3:
+			escribir "Miercoles"
+		4:
+		    escribir "Jueves"
+		5:
+			escribir "Viernes"
+		6: 
+			escribir "Sabado"
+		7:
+			escribir "Domingo"
+	Fin Segun 
+	
+FinFuncion
+
+Funcion ejerc25  //. Frases iguales: Escribir un programa que ingrese dos frases e indique si son iguales.
+	//ent: a=caracter, b= caracter Leer 
+	//pro: si a = b  entonces dar como verdadero y indicar la igualdad si es falso entonces mostrar "no son iguales"
+	//sal: mostrar segun la condicion si es o no igual
+	escribir "IDENTIFICADOR DE DOS PALABRAS IGUALES"
+    definir a , b Como Caracter
+	
+	escribir "Ingrese la dos palabras que se desea identificar"
+	leer a; leer b
+	
+	si a=b Entonces
+		escribir a " y " b " si son iguales"
+	SiNo
+		escribir "no son iguales"
+	FinSi
+	
+FinFuncion
+
+Funcion ejerc26 //Calculadora de precio con descuento: Crea un programa que permita a un usuario ingresar el precio de un art culo y un porcentaje de descuento. El
+	//programa debe calcular y mostrar el precio final despu s del descuento.
+	//ent: a=0.0 , (descuento%) b=0.0 leer descuento c=0.0, d= 0.0 calcular
+	//proce: c=a*(b/100), d=a-c
+	//sali: precio final despues del descuento osea d
+	escribir "CALCULADORA DE PRECIO CON DESCUENTO"
+	definir a,b,c,d como reales
+	escribir "ingrese el precio del producto"
+	leer a;
+	escribir "descuento en porcentaje"
+	leer b
+	c=a*(b/100)
+	d= a-c
+	Escribir "el precio del producto con descuento es de :" d
+	
+FinFuncion
+
+Funcion ejerc27 //Calculadora de factura con impuestos: Solicita al usuario que ingrese el total de una factura y el porcentaje de impuestos aplicado. Luego, calcula y muestra
+	//el monto total a pagar, incluyendo los impuestos.
+    //ent: a=0,0, b= 0.0 leer ;c=0.0, d=0.0 calcularlos 
+	//proce:  c=a*(b/100), d=a+c 
+	//sali: total a pagar d y el impuesto aplicado que es c
+	definir a,b,c,d como reales
+	escribir "ingrese el total de la factura"
+	leer a;
+	escribir "impuesto en porcentaje"
+	leer b
+	c=a*(b/100)
+	d= a+c
+	Escribir "el impuesto monetario aplicado es de ",c," y el precio total a pagar es de :" d
+	
+FinFuncion
+
+Funcion ejerc28 //Calculadora de sueldo con aumento: Pide al usuario que ingrese su salario actual y el porcentaje de aumento que recibir . Calcula y muestra el nuevo salario despu s del aumento.
+	//ent: a=0,0, b= 0.0 leer ;c=0.0, d=0.0 calcularlos 
+	//proce:  c=a*(b/100), d=a+c 
+	//sali: salario con aumento y el monto aumentado
+	escribir "CALCUDARA DE AUMENTO AL SALARIO"
+	definir a,b,c,d como reales
+	escribir "ingrese el salario"
+	leer a;
+	escribir "ingrese el porcentaje del aumento a recibir "
+	leer b
+	c=a*(b/100)
+	d= a+c
+	Escribir "el aumento monetario aplicado es de ",c," y el nuevo aumento a recibir es de :" d
+	
+FinFuncion
+
+
+Funcion ejerc29 //Calculadora de compra con m ltiples art culos: Permite al usuario ingresar el precio y la cantidad de varios art culos que est  comprando. Calcula el total de
+	//la compra y aplica un descuento del 10% si el total es mayor a cierta cantidad (por ejemplo, $100).
+	//ent: a=0,0, b= 0.0 leer c=0.0, d=0.0 calcularlos 
+	//proce:  repetir el proceso de pedir el precio y la cantidad de un artuculo y a*b = c  hasta que el ususario indique con (0)
+	//sali: total de la compra d y c
+	escribir "CALCULADORA DE MULTIPLES ARTICULOS"
+	definir a,total,d como reales
+	definir b Como Entero
+    Repetir
+		escribir "ingrese el precio unitario del articulo "," (ingrese 0 para finalizar)"
+		leer a
+        Si a<>0 Entonces
+			Escribir "ingrese la cantidad de articulos"
+			leer b
+			total= total+(a*b)
+		Fin Si
+	Hasta Que a= 0
+	si total>=100 Entonces
+		total=total-(total*0.10)
+		escribir "si califica para el descuento por lo tanto el total a pagar es de " total
+	SiNo
+		escribir "no califica para el descuento por lo tanto su valor a pagar es de " total
+	FinSi
+FinFuncion
+
+Funcion ejerc30 //Calculadora de impuestos sobre el salario: Solicita al usuario que ingrese su salario anual y calcula el impuesto sobre la renta seg n las siguientes tasas:
+	//ent:a=0.0, b=0.0 leer 
+	//proce:a mayor 10000 entonces aumenta 5% si es mas de 1001 hasta 20000 se le aplica un 10% si es de 20001 en adelante se le aplica un 15%
+	//sali: dependiendo del intervalo donde se encuentre els alario anual se aplica el impuesto y refleja el monto total
+	escribir "CALCULADORA DE IMPUESTOS SOBRE EL SALARIO"
+	
+	Definir salarioAnual como Numerico
+    Definir impuesto como Numerico
+	
+    Escribir "Ingresa tu salario anual: "
+    Leer salarioAnual
+    Si salarioAnual <= 10000 Entonces
+		impuesto <- salarioAnual * 0.05
+		Escribir "El impuesto sobre la renta es: ", impuesto
+	FinSi
+	Si salarioAnual>= 10001 y salarioAnual<20000 Entonces
+		impuesto <- salarioAnual * 0.10
+		escribir "el impuesto es " impuesto
+	FinSi
+	Si salarioAnual > 20000 
+		impuesto <- salarioAnual * 0.15
+		escribir "el impuesto es de " impuesto
+	FinSi	
+	
+FinFuncion
+
+
+Funcion ejerc31 //De $10001 a $20000: 10%
+	//ent:a=0.0, b=0.0 leer 
+	//proce:a mayor 10000 entonces aumenta 5% si es mas de 1001 hasta 20000 se le aplica un 10% si es de 20001 en adelante se le aplica un 15%
+	//sali: dependiendo del intervalo donde se encuentre els alario anual se aplica el impuesto y refleja el monto total
+	
+	Definir sueldo Como Real
+	Escribir "Ingrese su salario anual: ";leer sueldo
+	si sueldo <= 10000
+		Entonces
+		Escribir"Su porcentaje de impuesto => 5%." 
+		Escribir "Su total a pagar es: $",(salario*(5/100))
+	SiNo
+		si sueldo > 10000 & sueldo <= 20000
+			Entonces
+			Escribir"Su porcentaje de impuesto => 10%." 
+			Escribir "Su total a pagar es: $",(salario*(10/100))
+		SiNo
+			si sueldo > 20000
+				Entonces
+				Escribir"Su porcentaje de impuesto => 15%." 
+				Escribir "Su total a pagar es: $",((salario*(15/100)))
+			FinSi
+		FinSi
+	FinSi
+	
+FinFuncion
+
+Funcion ejerc33//Descuento por antig edad en la empresa: Pregunta al usuario cu ntos a os ha 
+	//estado trabajando en una empresa y calcula su bono de antig edad. Si ha 
+	//trabajado m s de 5 a os, otorga un bono del 5% sobre su salario.
+	definir an Como Entero
+	Definir salario Como Real
+	Escribir "Ingrese su salario: ";leer salario
+	Escribir "Ingrese la cantidad de a os laborados: ";leer an
+	si an > 5
+		Entonces
+		escribir "Se le otorgar  un bono del 5%."
+		escribir "Cantidad a recibir: ",(salario*(5/100))
+	SiNo
+		Escribir "Usted no puede recibir un bono."
+	FinSi
+FinFuncion
+
+Funcion ejerc34 //Calculadora de env o con tarifas diferentes: Crea un programa que permita al 
+	//usuario ingresar la distancia de env o y calcule el costo del env o. Si la distancia 
+	//es inferior a 50 km, el costo es de $10. Si la distancia es de 50 km o m s, el 
+	//costo es de $20.
+	Definir distancia Como Real
+	Definir costoEnvio Como Real
+	
+	Escribir "Ingrese la distancia de env o en kil metros: "
+	Leer distancia
+	
+	Si distancia < 50 Entonces
+		costoEnvio = 10
+	Sino
+		costoEnvio = 20
+	FinSi
+	
+	Escribir "El costo de env o es de $", costoEnvio
+FinFuncion
+
+
+Funcion ejerc35 //Calculadora de descuento por lealtad del cliente: Pide al usuario que ingrese el total de sus compras mensuales durante un a o. Si el total es superior a $500, 
+	//aplica un descuento del 10% en la pr xima compra.
+	//ent: totalcompras=0.00 leer,descuento=0.00,totalConDescuento=0.00 calcular
+	//pro: si el totalCompras es mayor a 500 entonces se aplica descuento=totalCompras-descuento SiNo indicar que no aplica
+	//sal: segun se cumpla la condicion indicar el total con descuento
+	Definir totalCompras, descuento, totalConDescuento Como Real
+	
+    Escribir "Ingrese el total de sus compras mensuales durante un año: "
+    Leer totalCompras
+	
+    Si totalCompras > 500 Entonces
+        descuento <- totalCompras * 0.10
+        totalConDescuento <- totalCompras - descuento
+        Escribir "Felicidades, ha alcanzado un descuento del 10% en su proxima compra."
+        Escribir "El total con descuento es de $", totalConDescuento
+    Sino
+        Escribir "Aun no ha alcanzado el monto minimo de $500 para el descuento."
+    FinSi
+FinFuncion
+funcion ejerc36 
+	//Ent:  cantidad=0.00, descuento y toalcondescuento calcular
+	//pro:  segun sea la cantidad de unidades entre 10 y 50 o  50 y 100 o si es mayor dar 5/10/15% segun el intervalo en que se encuentre multiplicar por 0.05 ,0.10,0.15 para sumar al total
+	//sal: indicar el valor que resulto de las operaciones
+	
+	Definir cantidad Como Entero
+    Definir precioUnitario, descuento, totalConDescuento Como Real
+	
+    Escribir "Ingrese la cantidad de unidades que va a comprar: "
+    Leer cantidad 
+	Escribir "Ingrese el precio unitario del producto"
+    Leer precioUnitario
+	
+    Si cantidadUnidades >= 10 Y cantidadUnidades <= 50 Entonces
+        descuento <- precioUnitario * cantidadUnidades * 0.05
+    Sino Si cantidadUnidades >= 51 Y cantidadUnidades <= 100 Entonces
+			descuento <- precioUnitario * cantidadUnidades * 0.10
+		Sino Si cantidadUnidades > 100 Entonces
+				descuento <- precioUnitario * cantidadUnidades * 0.15
+			Sino
+				descuento <- 0
+			FinSi
+			totalConDescuento <- (precioUnitario * cantidadUnidades) - descuento
+		FinSi
+	FinSi
+	
+	Escribir "El descuento aplicado es de $", descuento
+	Escribir "El total con descuento es de $", totalConDescuento
+FinFuncion
+
+Funcion ejerc40 //Calculadora de costo de servicio: Pregunta al usuario cu ntas horas de servicio 
+	//necesita y calcula el costo total. Si las horas son mas de 10, aplica un 
+	//descuento del 20%.
+	//ent: horasServicio , cosTotal Leer 
+	//pro: si las horas son mayor a 10 entonces multiplicar
+	//sal:
+	
+	Definir horasServicio, costoTotal Como Real
+	
+    Escribir "Ingrese la cantidad de horas de servicio que necesita: "
+    Leer horasServicio
+	
+    Si horasServicio > 10 Entonces
+        costoTotal <- horasServicio * 0.20
+    Sino
+        Escribir "el total a pagar es de $ " ,costoTotal
+    FinSi
+
+FinFuncion
+
+funcion ejerc41
+	//Suma de números pares: Utiliza un bucle for para calcular la suma de los números pares del 1 al 50.
+	//utilizamos un bucle for que comienza en 2 y avanza de 2 en 2 hasta 50
+	//dentro del bucle sumamos los numeros pares y al final
+	//muestra la suma total
+	escribir "INICIAR EJERCICIO 41"
+	Definir suma, numero Como Entero
+	
+	suma <- 0  //Iniciamo la suma en 0
+	
+    Para numero <- 2 Hasta 50 Con Paso 2  // Iteramos por los números pares
+        suma <- suma + numero  // Sumamos el número par actual a la suma
+    FinPara
+	
+    Escribir "La suma de los números pares del 1 al 50 es:", suma
+FinFuncion
+
+funcion ejerc42
+	//Tabla de multiplicar: Utiliza un bucle for para imprimir la tabla de multiplicar de un número ingresado por el usuario del 1 al 12
+	//solicita al usuario ingresar un numero
+	//utilizamos bucle for para calcular e imprimir la tabla de multiplicar de ese numero del 1-12
+	//muestra el resultado dado 
+	Escribir "INICIAR EJERCICIO 42"
+	Definir numero, resultado Como Entero
+	
+    Escribir "Ingrese un número para ver su tabla de multiplicar:"
+    Leer numero
+	
+    Escribir "Tabla de multiplicar del", numero, ":"
+	
+    Para multiplicador <- 1 Hasta 12
+        resultado <- numero * multiplicador
+        Escribir numero, " x ", multiplicador, " = ", resultado
+    FinPara
+FinFuncion
+
+funcion ejerc43
+	//Contador de vocales: Utiliza un bucle while para contar el número de vocales en una palabra ingresada por el usuario.
+	//solicita al usuario ingresar una palabra
+	//luego utilizamos un bucle while para recorrer cada caracter de la palabra 
+	//verificamos si es una volal y si es el caso incrementar el contador de voacles
+	//al final mostramos el numero de vocales en la palabra 
+	Definir palabra Como Caracter
+    Definir Long, contadorVocales Como Entero
+    contadorVocales <- 0 
+    
+    Escribir "Ingrese una palabra:"
+    Leer palabra
+    
+    longi <- Longitud(palabra) //obtener la longitud de la palabra 
+    i <- 1 //inicializar el contador de palabras <- 0 //iniciar el contador de vocales 
+    Mientras i <= Long Hacer
+        letra <- Minusculas(Subcadena(palabra, i, 1)) //obtener una letra de la palabra 
+		//verificar si la letra es una vocal 
+        Si letra == "a" O letra == "e" O letra == "i" O letra == "o" O letra == "u" Entonces
+            contadorVocales <- contadorVocales + 1
+        FinSi
+        i <- i + 1
+    FinMientras
+    
+    Escribir "El número de vocales en la palabra es:", contadorVocales
+FinFuncion
+
+funcion ejerc44
+	//Contador de digitos: Utiliza un bucle for para contar el numero de dígitos en una palabra ingresada por el usuario.
+	//solicita al usuario ingresar una palabara
+	//utilizamos un bucle for para recorrer cada caracter de la palabra 
+	//verificamos si un digito utilizando la funcion esdigito y si es un digito, incrementa el contador de digitos
+	//mostramos el numero de digitos en la palabra 
+
+	Definir palabra Como Caracter
+    Definir longi, i, contadorDigitos Como Entero
+	
+    Escribir "Ingrese una palabra:"
+    Leer palabra
+	
+    longi <- Longitud(palabra) //obtener la longitud de la palabra 
+	contadordigitos <- 0 //iniciar el contador de digitos 
+	
+    Para i <- 1 Hasta longi 
+		caracter <- Subcadena(palabra, i, 1) //obtener un caracter de la palabra 
+	FinPara
+	//verificar si el caracter es un digito
+	si esdigito Entonces
+		contadorDigitos <- contadorDigitos + 1
+	FinSi
+	
+    Escribir "El número de dígitos en la palabra es:", contadorDigitos
+FinFuncion
+
+funcion ejerc45
+	//Adivina el número: Genera un número aleatorio y pide al usuario que adivine el número. 
+	//Utiliza un bucle while para repetir la solicitud hasta que adivine correctamente.
+	//Generamos un numero del 1 y 100 que permite al usuario adivinarlo
+	//utilizamos un bucle de while para repetir la solicitud hasta que el usuario adivine correctamente proporcionando pistas de si el numero es mayor o menor
+	//cuando el usuario adivina correctamente, se muestra el numero de intentos
+
+	Definir numeroaleatorio, numeroAdivino Como Entero
+    Definir intentos Como Entero
+    Definir acertado Como logico
+	
+    // Generar un número aleatorio entre 1 y 100
+    numeroAdivinar <- Aleatorio(1, 100)
+    intentos <- 0
+    acertado <- Falso
+	
+    Escribir "Adivina el número entre 1 y 100."
+	
+    Mientras acertado == Falso Hacer
+        Escribir "Ingresa tu intento:"
+        Leer numeroUsuario
+        intentos <- intentos + 1
+		
+        Si numeroUsuario == numeroAdivinar Entonces
+            Escribir "¡Felicidades! Adivinaste el número en", intentos, "intentos."
+            acertado <- Verdadero
+        Sino
+            Si numeroUsuario < numeroAdivinar Entonces
+                Escribir "El número es mayor. Sigue intentando."
+            Sino
+                Escribir "El número es menor. Sigue intentando."
+            FinSi
+        FinSi
+    FinMientras
+FinFuncion
+
+Funcion ejerc46
+	Definir palabra Como Caracter
+	Definir n,x,c Como Entero
+	Escribir "ingrese una palabra";
+	Leer palabra
+	n = Longitud(palabra)
+	x = 1
+	c = 0
+	Mientras x <= n Hacer
+		Segun SubCadena(palabra,x,x) Hacer
+			"a" o "A":
+				c = c +1
+			"b" o "B":
+				c = c +1
+			"c" o "C":
+				c = c +1
+			"d" o "D":
+				c = c +1
+			"e" o "E":
+				c = c +1
+			"f" o "F":
+				c = c +1
+			"g" o "G":
+				c = c +1
+			"h" o "H":
+				c = c +1
+			"i" o "I":
+				c = c +1
+			"j" o "J":
+				c = c +1	
+			"k" o "K":
+				c = c +1
+			"m" o "M":
+				c = c +1
+			"n" o "N":
+				c = c +1
+			"ñ" o "Ñ":
+				c = c +1
+			"o" o "O":
+				c = c +1
+			"p" o "P":
+				c = c +1
+			"q" o "Q":
+				c = c +1
+			"r" o "R":
+				c = c +1
+			"s" o "S":
+				c = c +1
+			"t" o "T":
+				c = c +1
+			"u" o "U":
+				c = c +1
+			"v" o "V":
+				c = c +1
+			"w" o "W":
+				c = c +1
+			"x" o "X":
+				c = c +1
+			"y" o "Y":
+				c = c +1	
+			"z" o "Z":
+				c = c +1
+		Fin Segun
+		x = x + 1
+	Fin Mientras
+	Escribir "La frase ",palabra," tiene",c," vocales"
+	FinFuncion
+
+Funcion ejerc47
+	//Suma de números impares: Utiliza un bucle while para calcular la suma de los números impares del 1 al 100.
+	//utilizamos un bucle while para iterar desde 1 hasta 100
+	//sumamos solo los numeros impares al valor de la variable suma
+	//mostramos la umsa de los siguientes numeros impares en ese rango 
+
+    Definir numero, suma Como Entero 
+	
+    numero <- 1
+    suma <- 0
+	
+    Mientras numero <= 100 Hacer
+        Si numero % 2 <> 0 Entonces
+            suma <- suma + numero
+			numero <- numero + 2 
+        FinSi
+        numero <- numero + 1
+    FinMientras
+	
+    Escribir "La suma de los números impares del 1 al 100 es:", suma
+FinFuncion 
+
+Funcion Ejerc48
+	//Contador de caracteres: Escribir un programa que lea una palabra y presenta cuantos caracteres hay en dicha palabra.
+	//solicita al usuario ingresar una palabra 
+	//luego utiilizamos la funcion longitud para determinar la cantidad de caracteres en esa palabra
+	//mostramos la cantidad de caracteres
+
+    Definir palabra, longiutd Como entero
+    
+    Escribir "Ingresa una palabra:"
+    Leer palabra
+    
+    long <- Long
+    
+    Escribir "La palabra ingresada tiene", Long, "caracteres."
+FinFuncion 
+
+Funcion Ejerc49
+	//. Suma de números: Pide al usuario que ingrese números enteros positivos uno por uno y utiliza un bucle while para calcular la suma de estos números. 
+	//El ciclo debe terminar cuando el usuario ingrese un número negativo.
+	//solicita al usuario ingresar numeros enteros positivos uno por uno 
+	//utilizamos un bucle while para calcular la suma de estos numeros y se dentendra cuando el usuario ingrese un  umero negativo
+	//finalmente mosttamos la suma de los numeros ingresados 
+
+    Definir num, suma Como Entero
+    suma <- 0
+    
+    Escribir "Ingresa números enteros positivos uno por uno (ingresa un número negativo para terminar):"
+    Leer nume
+    
+    Mientras nume >= 0 Hacer
+		escribir "ingresa un num:" 
+		leer num
+		si num >= 0 Entonces
+			suma <- suma + num
+		FinSi
+		
+    FinMientras
+    
+    Escribir "La suma de los números ingresados es:", suma
+FinFuncion 
+
+
+Funcion Ejerc50
+	//Cuenta regresiva: Pide al usuario que ingrese un número entero positivo y utiliza un bucle while para mostrar una cuenta regresiva desde ese número hasta 1.
+	//solicita al usuario ingresar un numero entero positivo
+	//utilizamos un bucle while
+	//mostramos una cuenta regresiva desde ese numero hasta 1 
+    Definir numero Como Entero
+    
+    Escribir "Ingresa un número entero positivo:"
+    Leer numero
+    
+    Si numero <= 0 Entonces
+        Escribir "Por favor, ingresa un número entero positivo."
+    Sino
+        Mientras numero >= 1 Hacer
+            Escribir numero
+            numero <- numero - 1
+        FinMientras
+    FinSi
+FinFuncion 
+
+
+
+Funcion Ejerc51
+	//Suma de elementos: Crea un arreglo de números enteros y calcula la suma de todos sus elementos.
+	//se crea un arreglo llamado numero
+	//iniciamos sus elementos con valores y luego utiliza el bucle for para calcular la suma de todos los elementos del arreglo
+	//mostramos la suma resultante
+
+	Definir cantidadElementos Como Entero
+    Definir suma Como Entero
+    suma <- 0
+	
+    Escribir "¿Cuántos elementos tiene el arreglo?"
+    Leer cantidadElementos
+	
+    // Definir el arreglo de números enteros
+    Definir arre,  cantidadElementos  Como Entero
+	
+    // Llenar el arreglo con valores
+    Para i <- 1 Hasta cantidadElementos Hacer
+        Escribir "Ingresa el valor del elemento ", arre, ":"
+        Leer arre
+    FinPara
+	
+    // Calcular la suma de los elementos del arreglo
+    Para i <- 1 Hasta cantidadElementos Hacer
+        suma <- suma + arre
+    FinPara
+	
+    // Mostrar la suma de los elementos
+    Escribir "La suma de los elementos del arreglo es:", suma
+FinFuncion
+
+
+Funcion Ejerc52
+	//Promedio de calificaciones: Crea un arreglo de calificaciones (números decimales) y calcula el promedio de las calificaciones.
+	//iniciamos sus elementos con calificaciones y luego utiliza un bucle for para calcular la suma de todas las calificaciones
+	//luego calculamos el promedio dividiendo la suma total por el numero de calificaciones 
+	//finalmente mostramos el promedio resultante 
+
+	Escribir "¿Cuántas calificaciones deseas ingresar?"
+    Leer cantidadCalificaciones
+	
+    // Definir el arreglo de calificaciones
+    Dimension calificaciones[cantidadCalificaciones]
+	
+    // Leer las calificaciones y calcular la suma
+    sumaCalificaciones <- 0
+    Para i <- 1 Hasta cantidadCalificaciones Hacer
+        Escribir "Ingresa la calificación ", i, ":"
+        Leer calificaciones[i]
+        sumaCalificaciones <- sumaCalificaciones + calificaciones[i]
+    FinPara
+	
+    // Calcular el promedio
+    promedio <- sumaCalificaciones / cantidadCalificaciones
+	
+    // Mostrar el promedio
+    Escribir "El promedio de las calificaciones es:", promedio
+FinFuncion
+
+Funcion Ejerc53
+	//Mayor y menor valor: Encuentra el valor máximo y mínimo en un arreglo de números enteros.
+	//iniciamos sus elementos con valores y utiliza un bucle for para encontrar el valor maximo y minimo en el arreglo+
+	//mostramos los valores
+
+    Definir cantidadNumeros Como Entero
+    Definir numeros Como Entero
+    Definir maximo Como Entero
+    Definir minimo Como Entero
+	
+    Escribir "¿Cuántos números deseas ingresar?"
+    Leer cantidadNumeros
+	
+    // Definir el arreglo de números
+    Dimension numeros[cantidadNumeros]
+	
+    // Leer los números y encontrar máximo y mínimo
+    maximo <- numeros[1]
+    minimo <- numeros[1]
+	
+    Para i <- 1 Hasta cantidadNumeros Hacer
+        Escribir "Ingresa el número ", i, ":"
+        Leer numeros[i]
+		
+        Si numeros[i] > maximo Entonces
+            maximo <- numeros[i]
+        FinSi
+		
+        Si numeros[i] < minimo Entonces
+            minimo <- numeros[i]
+        FinSi
+    FinPara
+	// Mostrar el máximo y el mínimo
+    Escribir "El número máximo es:", maximo
+    Escribir "El número mínimo es:", minimo
+FinFuncion 
+
+Funcion Ejerc54
+	//Buscar un elemento: Pide al usuario que ingrese un número y verifica si ese número está presente en un arreglo dado.
+	//definimos una un algoritmo llamado "buscarElemento" que permite al usuario ingresar 5 numeros en un arreglo
+	//despues ingresamos un numero para buscar en el arreglo
+	//luego verificamos si el numero esta presente en el arreglo 
+	//por ultimo mostramos un mensaje correspondiente 
+
+    Definir arreglo Como entero
+    Definir numeroencontrado Como Entero
+    Definir encontrado Como logico
+	
+    Escribir "¿Cuántos elementos deseas ingresar en el arreglo?"
+    Leer cantidadElementos
+	
+    // Llenar el arreglo con valores ingresados por el usuario
+    Para i <- 1 Hasta cantidadElementos Hacer
+        Escribir "Ingresa el elemento ", i, ":"
+        Leer arreglo
+    FinPara
+	
+    Escribir "Ingresa un número para buscar en el arreglo:"
+    Leer numeroBuscado
+	
+    encontrado <- Falso
+	
+    // Verificar si el número está en el arreglo
+    Para i <- 1 Hasta cantidadElementos Hacer
+        Si arreglo = numeroEncontrado Entonces
+            encontrado = Verdadero
+        FinSi
+    FinPara
+	
+    Si encontrado Entonces
+        Escribir "El número", numeroencontrado, "se encuentra en el arreglo."
+    Sino
+        Escribir "El número", numeroEncontrado, "no se encuentra en el arreglo."
+    FinSi
+FinFuncion 
+
+
+Funcion Ejerc55
+	//Contar elementos pares: Cuenta cuántos números pares hay en un arreglo de números enteros.
+	//definimos un algoritmo llamado "contraPares" que permitira al usuario ingresar 10 numeros enteros en el arreglo
+	//luego, recorremos el arreglo y verifica si cada numero es par utilizando la operacion de MOD2 
+	//si es para, aumenta el contador cantidadPares
+	//finalmente, mostramos la cantidad de numeros pares en el arreglo
+
+    Definir contidadPares, arreglo Como Entero
+    contadorPares <- 0
+	
+    Escribir "ingresa 1o numeros enteros en el arreglo: "
+	
+    Para i <- 1 Hasta 10 
+        Leer arreglo
+    FinPara
+	
+    // Contar elementos pares en el arreglo
+    Para i <- 1 Hasta 10 Hacer
+        Si arreglo % 2 = 0 Entonces
+            contadorPares <- contadorPares + 1
+        FinSi
+    FinPara
+	
+    Escribir "la cantidad de números pares en el arreglo es:", contadorPares
+FinFuncion 
+
+Funcion Ejerc56
+	//Inversión de un arreglo: Invierte el orden de los elementos en un arreglo. Por ejemplo, [1, 2, 3] se convierte en [3, 2, 1].
+	//permite al usuario ingresar elementos en un arrelo hasta que ingrese -1 
+	//indicar el final de la entrada
+	//despues invertimos el orden de los elementos 
+	//luego muestra tanto el resultado 
+	
+	Definir a,b,i como entero
+	Dimension a[5],b[ 5]
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		a[i]= i*1;
+		b[5+1-i]=a[i];
+	Fin Para
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir a[i];
+	Fin Para
+	Escribir "-----";
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir b[i]
+	Fin Para
+FinFuncion
+
+Funcion Ejerc57
+	//Buscar el índice: Pide al usuario que ingrese un valor y encuentra el índice de ese valor en un arreglo. Si el valor aparece más de una vez, muestra todos los índices.
+	//permitir al usuario ingresar 10 numeros enteros en un arreglo y luego ingresar un valor para buscar
+	//despues recorremos el arreglo y mostramos los indices en los que se encuentra ese valor
+	//si el valor aparece mas de una vez, se mostraran todos los indices correspondientes 
+
+	definir arreglo Como Entero
+	definir valor, i Como Entero
+	escribir "ingresa 10 numeros enteros en el arreglo:"
+	para i <- 1 hasta 10 Hacer
+		leer arreglo
+	FinPara
+	
+	escribir "ingresa el valor para buscar"
+	leer valor
+	
+	escribir "los indices en los que se encuentra el valor son:"
+	para i <- 1 Hasta 10
+		si arreglo= valor entonces 
+			escribir i 
+		FinSi
+	FinPara
+FinFuncion
+
+
+Funcion Ejerc58
+	//Función sin parámetros para saludar
+	// escribir el saludo
+
+	Escribir "Hola, familia";
+FinFuncion 
+
+Funcion Ejerc59
+	//Función con parámetros para sumar dos números.
+	//sumar 2 numero y luego ejecutar el programa 
+
+	Definir num1, num2, resulsuma Como Real
+	Escribir "ingrese dos numeros para sumarlos";
+	Leer num1;
+	leer num2;
+	suma=num1+num2;
+	Escribir "la suma de los numeros es:", resulsuma
+FinFuncion 
+
+
+Funcion Ejerc60
+	//Función con return para multiplicar dos números.
+	//multiplicar 2 numeros y luego ejecutar el programa 
+
+	Definir a,b Como Entero;
+	Escribir "ingrese dos numeros para multiplicarlos";
+	Leer a;
+	leer b;
+	multiplicacion=a*b;
+	Escribir multiplicacion;
+FinFuncion 
+
+Funcion Ejerc61
+	//Función sin return para determinar si un número es par o impar.
+	
+	Definir a,b  como enteros;
+	Escribir "Ingrese un numero";
+	Leer a;
+	b = a mod 2;
+	Si b == 0 Entonces
+		Escribir null;
+	SiNo
+		Escribir null;
+	Fin Si
+FinFuncion
+
+
+Funcion Ejerc62
+	// Función con parámetros y return para calcular el área de un rectángulo.
+
+	Definir a,b,c Como Real;
+	Escribir "ingrese la base";
+	Leer a;
+	Escribir "ingrse la altura";
+	Leer b;
+	c=a*b;
+	Escribir "Esta es el area del rectangulo = ",c;
+FinFuncion 
+
+
+Funcion Ejerc63
+	//Función sin parámetros para imprimir tu nombre.
+	definir nombre Como Caracter
+	leer nombre 
+	
+	Escribir "Mi nombre es ", nombre
+	
+FinFuncion 
+
+
+Funcion Ejerc64
+	//Función con return para convertir grados Celsius a Fahrenheit.
+	Escribir "INICIAR EJERCICIO 64"
+	Definir a Como real;
+	Escribir "Ingrese su valor en celsius para pasarlo a fahrenheit";
+	Leer a;
+	convertir=a*1.8+32;
+	Escribir "Estos son los grados celsius a fahrenheit = " convertir;
+FinFuncion 
+
+Funcion Ejerc65
+	//Función con parámetros para contar un carácter en una frase
+
+	Para i<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir i;
+	Fin Para
+FinFuncion 
+
+
+Funcion Ejerc66
+	//Función sin return para imprimir números del 1 al 10.
+
+	Para i<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir i;
+	Fin Para
+FinFuncion 
+
+Funcion Ejerc67
+	//Función con parámetros y return para sumar una lista de números
+
+	Definir a Como Entero;
+	Dimension numerola[5]
+	a=0;
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir "ingrese un numero"
+		Leer numerola(i);
+		a=a+numerola(i);
+	Fin Para
+	Escribir "Esta es la suma total de esa lista de numeros = " a;	
+FinFuncion
+
+
+Algoritmo tarea1
+	
+	//ejerc11
+	//ejerc12
+	//ejerc13
+	//ejerc14
+	//ejerc15
+	//ejerc16
+	//ejerc17
+	//ejerc18
+	//ejerc19
+	//ejerc20
+	//ejerc21
+	//ejerc22
+	//ejerc23
+	//ejerc24
+	//ejerc25
+	//ejerc26
+	//ejerc27
+	//ejerc28
+	//ejerc29
+	//ejerc30
+	//ejerc31
+	//ejerc33
+	//ejerc34
+	//ejerc35
+	//ejerc36
+	//ejerc40
+	//ejerc41
+	//ejerc42
+	//ejerc43
+	//ejerc44
+	//ejerc45
+	//ejerc46
+	//ejerc47 
+	//Ejerc48 
+	//Ejerc49
+	//Ejerc50
+	//Ejerc51
+	//Ejerc52
+	//Ejerc53
+	//Ejerc54
+	//Ejerc55
+	//Ejerc56
+	//Ejerc57
+	//Ejerc58
+	//Ejerc59
+	//Ejerc60
+	//Ejerc61
+	//Ejerc62
+	//Ejerc63
+	//Ejerc64
+	//Ejerc65
+	//Ejerc66
+	//Ejerc67
+	
+	
+FinAlgoritmo
