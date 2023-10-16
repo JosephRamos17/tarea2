@@ -85,20 +85,20 @@ funcion ejercicio8//video2
 	escribir "el resultado es " ,resultado
 Finfuncion
 funcion ejercicio9//video3
-			//ejercicio9
-           //	primero definiredad como una variable entera
-           //	a la variable edad la asinamos como numero19 
-          //	despues utilizar el comando si-sino 
-          //	en cuestion de que si es mayor o  menor saldra un mensaje diciendo y es mayor o menor de edad
-			
-			definir edad como entero
-			edad=19;
-			Si edad >= 18 Entonces
-				escribir "eres mayor de edad"
-			SiNo
-				escribir "eres menor de edad"	
-			Fin Si
-			
+	//ejercicio9
+	//	primero definiredad como una variable entera
+	//	a la variable edad la asinamos como numero19 
+	//	despues utilizar el comando si-sino 
+	//	en cuestion de que si es mayor o  menor saldra un mensaje diciendo y es mayor o menor de edad
+	
+	definir edad como entero
+	edad=19;
+	Si edad >= 18 Entonces
+		escribir "eres mayor de edad"
+	SiNo
+		escribir "eres menor de edad"	
+	Fin Si
+	
 Finfuncion
 funcion ejercicio10//video4
 	//ejercicio10
@@ -203,11 +203,11 @@ Finfuncion
 Funcion suma ( dato1,dato2 )
 	escribir "el resutado es :",dato1+dato2	
 Fin Funcion
-Algoritmo	ejercicio15//video 9
-	leer dato1
-	leer dato2
-	Suma(dato1,dato2);
-FinAlgoritmo
+//Algoritmo	ejercicio15//video 9
+//	leer dato1
+//	leer dato2
+//	Suma(dato1,dato2);
+//FinAlgoritmo
 Algoritmo ejercvideos
 	ejercicio1
 	ejercicio2
@@ -223,5 +223,4 @@ Algoritmo ejercvideos
 	ejercicio13
 	ejercicio14
 	//ejercicio15 SOLO PUEDE HABER UN Algoritmo PORFAVOR EJECURTAR APARTE
- FinAlgoritmo
-	
+FinAlgoritmo
